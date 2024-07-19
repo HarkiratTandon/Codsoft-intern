@@ -1,0 +1,115 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --orange-color: hsl(280, 100%, 53%);
+    --light-bg-black-color: #383838;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    width: 270px;
+    height: 80vh;
+    border-radius: 30px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    padding-inline: 20px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row.last_row button:first-child {
+    flex-basis: 47.3%;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    flex-basis: 22%;
+    font-size: 22px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: var(--light-bg-black-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.row button:hover {
+    box-shadow: 0 0 5px #575757;
+}
+
+.btn.btn_orange {
+    background-color: var(--orange-color);
+    font-weight: 500;
+    padding-right: 3px;
+}
+
+.btn.btn_orange:hover {
+    box-shadow: 0 0 5px #d3bb34;
+}
+
+.btn.light_btn {
+    font-weight: 500;
+    background-color: #acacac;
+    color: black;
+    font-size: 20px;
+}
+
+.btn.light_btn:hover {
+    box-shadow: 0 0 10px #808080;
+}
+
+.btn.light_btn span {
+    display: inline-block;
+    transform: rotate(10deg);
+}
+
+.footer_line {
+    display: flex;
+    justify-content: center;
+    margin-block: 15px 10px;
+}
+
+#result {
+    overflow: hidden;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    text-align: right;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding-right: 5px;
+    font-weight: 300;
+}
